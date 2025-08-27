@@ -1,0 +1,80 @@
+.header {
+  background-color: #000;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-section img {
+  width: 253px;
+  height: 101px;
+  object-fit: contain;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-btn {
+  background: #46443f;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 0px #90908d;
+}
+
+.nav-btn:hover {
+  background: #ededeb;
+  color: #46443f;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo-section img {
+    width: 200px;
+    height: 80px;
+  }
+
+  .nav-buttons {
+    gap: 0.5rem;
+  }
+
+  .nav-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
